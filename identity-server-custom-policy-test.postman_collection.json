@@ -1,0 +1,123 @@
+{
+	"id": "708b899a-8770-6be5-9d17-a16de472123e",
+	"name": "identity-server-custom-policy-test",
+	"description": "postman collection to test identity server authentication together with idenity authorization cusom policy implementation",
+	"order": [
+		"dda19876-15a6-0974-e4bd-910c1fb7f755",
+		"23741609-a20b-4da6-7fb4-46e04955f153"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1507755422216,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "23741609-a20b-4da6-7fb4-46e04955f153",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjMwZTE5NjE4MGFjZmY0OTJhZDUzYzc5YWQ1NTc3YWIwIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1MDc3NTYyNzksImV4cCI6MTUwNzc1OTg3OSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDc0OSIsImF1ZCI6WyJodHRwOi8vbG9jYWxob3N0OjUwNzQ5L3Jlc291cmNlcyIsImFwaTEiXSwiY2xpZW50X2lkIjoiY2xpZW50IiwiY2xpZW50X0FnZSI6IjE3Iiwic2NvcGUiOlsiYXBpMSJdfQ.izU-uZBLyDI2j79k0oUcSUZJcJ73N9sJMksOKpmc7jWZZdDp2i4KNNl1wMuThYTye12jfKiHn9h_l-JBS0CR19RdFBR9awcBgWyyXQh8ku6DPMzw9GkKFDYcMWDhHD_efmR0xYCKTGF-v-QUIiLOF5Z_It-_YmtRSjg0j0i9FQU81lIkmFxaR5p--mislRjBEJ9Ty2kq6pRLwie2BEYWekD-f-EyQdgqdnAVJJhEJtNtVk1u4vjCkZz-0La02aNWHwjd0bDx9qLFygTv7wZJXeW2YyyzT3-Cmr-LBk5-82UhPbspLyfuG0S1L9huwb7MCPUufW7Pxkp6Xf7r7_N1Lw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjMwZTE5NjE4MGFjZmY0OTJhZDUzYzc5YWQ1NTc3YWIwIiwidHlwIjoiSldUIn0.eyJuYmYiOjE1MDc3NTYyNzksImV4cCI6MTUwNzc1OTg3OSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDc0OSIsImF1ZCI6WyJodHRwOi8vbG9jYWxob3N0OjUwNzQ5L3Jlc291cmNlcyIsImFwaTEiXSwiY2xpZW50X2lkIjoiY2xpZW50IiwiY2xpZW50X0FnZSI6IjE3Iiwic2NvcGUiOlsiYXBpMSJdfQ.izU-uZBLyDI2j79k0oUcSUZJcJ73N9sJMksOKpmc7jWZZdDp2i4KNNl1wMuThYTye12jfKiHn9h_l-JBS0CR19RdFBR9awcBgWyyXQh8ku6DPMzw9GkKFDYcMWDhHD_efmR0xYCKTGF-v-QUIiLOF5Z_It-_YmtRSjg0j0i9FQU81lIkmFxaR5p--mislRjBEJ9Ty2kq6pRLwie2BEYWekD-f-EyQdgqdnAVJJhEJtNtVk1u4vjCkZz-0La02aNWHwjd0bDx9qLFygTv7wZJXeW2YyyzT3-Cmr-LBk5-82UhPbspLyfuG0S1L9huwb7MCPUufW7Pxkp6Xf7r7_N1Lw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:50795/api/values",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "708b899a-8770-6be5-9d17-a16de472123e",
+			"data": null,
+			"dataMode": "params",
+			"name": "call _api_with_token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507756530506,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "dda19876-15a6-0974-e4bd-910c1fb7f755",
+			"headers": "",
+			"headerData": [
+				{
+					"key": "",
+					"value": "client_credentials",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:50749/connect/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "708b899a-8770-6be5-9d17-a16de472123e",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "client",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "secret",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "api1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "create_token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507755440608,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
